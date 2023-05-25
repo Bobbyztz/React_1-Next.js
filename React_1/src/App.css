@@ -1,0 +1,140 @@
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 15px; /* Increase border-radius for a smoother corner design */
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px auto;
+  background: linear-gradient(to bottom, #ff7f7f 0%, #ff0000 100%); /* Gradual red gradient */
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px; /* Increase border-radius for a smoother corner design */
+  background: linear-gradient(to bottom, #b30000 0%, #800000 100%); /* Darker red gradient */
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.btn:hover {
+  background: linear-gradient(to bottom, #990000 0%, #660000 100%); /* Even darker red gradient on hover */
+}
+
+.btn--alt {
+  background:white;
+  border-color: white;
+  color: red;
+  border: 2px solid red;
+}
+
+.btn--alt:hover {
+  background-color: white;
+  color: white;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  max-width: 600px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  z-index: 200;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  max-width: 400px;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  z-index: 200;
+  text-align: center;
+  color: black;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 100;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 2em;
+}
+
+.card {
+  background-color: #282c34;
+  border: 1px solid #61dafb;
+  border-radius: 10px;
+  padding: 2em;
+  max-width: 400px;
+  margin-bottom: 2em;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+h2 {
+  color: #61dafb;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border: 2px solid #61dafb;
+  background-color: transparent;
+  color: #61dafb;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #61dafb;
+  color: #282c34;
+}
