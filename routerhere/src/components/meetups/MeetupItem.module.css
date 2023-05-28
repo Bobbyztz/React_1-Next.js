@@ -1,0 +1,75 @@
+/* Styles for the outer container of each item */
+.item {
+    border: 1px solid #ccc; /* Adds a border around the item */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    padding: 10px; /* Adds space inside the border */
+    margin: 10px 0; /* Adds space outside the border */
+    border-radius: 8px; /* Rounds the corners of the border */
+    display: flex; /* Makes the item a flex container for layout */
+    justify-content: space-between; /* Spaces out the direct children (image, content, actions) */
+    align-items: center; /* Vertically centers the direct children */
+    background-color: white; /* Sets the background color of the item */
+  }
+  
+  /* Styles for the image container */
+  .image {
+    width: 150px; /* Sets a fixed width for the image container */
+    height: 150px; /* Sets a fixed height for the image container */
+    overflow: hidden; /* Ensures that the image doesn't overflow its container */
+    margin-right: 1rem; /* Adds some space to the right of the image container */
+  }
+  
+  /* Styles for the image itself */
+  .image img {
+    width: 100%; /* Makes the image take up the full width of its container */
+    height: 100%; /* Makes the image take up the full height of its container */
+    object-fit: cover; /* Ensures that the image covers its container, cropping if necessary */
+  }
+  
+  /* Styles for the content container */
+  .content {
+    flex: 1; /* Allows the content container to grow and take up remaining space */
+    display: flex; /* Makes the content a flex container for layout */
+    flex-direction: column; /* Stacks the content's children (h3, address, p) vertically */
+    justify-content: center; /* Vertically centers the content's children */
+  }
+  
+  /* Styles for the title */
+  .content h3 {
+    margin: 0 0 0.5rem 0; /* Adds some space below the title */
+    color: #282c34; /* Sets the color of the title */
+  }
+  
+  /* Styles for the address */
+  .content address {
+    color: #666666; /* Sets the color of the address */
+    font-style: italic; /* Makes the address italic */
+  }
+  
+  /* Styles for the description */
+  .content p {
+    margin: 0.5rem 0; /* Adds some space above and below the description */
+  }
+  
+  /* Styles for the actions container */
+  .actions {
+    display: flex; /* Makes the actions a flex container for layout */
+    justify-content: flex-end; /* Aligns the button to the right */
+  }
+  
+  /* Styles for the button */
+  .actions button {
+    background: #282c34; /* Sets the background color of the button */
+    color: white; /* Sets the color of the button text */
+    border: none; /* Removes the default browser button border */
+    border-radius: 5px; /* Rounds the corners of the button */
+    padding: 0.5rem 1.5rem; /* Adds space inside the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+  }
+  
+  /* Styles for the button when hovering or active */
+  .actions button:hover,
+  .actions button:active {
+    background: #666666; /* Changes the background color of the button */
+  }
+  
