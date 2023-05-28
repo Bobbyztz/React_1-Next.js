@@ -20,7 +20,7 @@ function AllMeetupsPage() {
     <section>
       <h1>All Meetups</h1>
       <ul>{DUMMY_DATA.map((meetup) => {
-        return <li>{meetup.id}</li>
+        return <li key={meetup.id}>{meetup.id}</li>
       })}</ul>
     </section>
   );
