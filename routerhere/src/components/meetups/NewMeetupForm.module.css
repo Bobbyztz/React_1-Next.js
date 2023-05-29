@@ -34,8 +34,8 @@
     border-color: #7b7b7b; /* Changes border color when focused */
   }
   
-  /* Style for the action button */
-  .actions {
+/* Style for the action button */
+.actions {
     display: flex;
     justify-content: flex-end; /* Align button to the right */
     margin-top: 1rem; /* Space at the top */
@@ -45,15 +45,21 @@
     font: inherit; /* Inherits font properties from parent */
     padding: 0.5rem 1.5rem; /* Padding inside button */
     border: none; /* No border */
-    background: #282c34; /* Dark blue background */
+    background: #8B0000; /* Dark red background */
     color: white; /* White text */
     cursor: pointer; /* Cursor changes when hovering over button */
-    border-radius: 4px; /* Rounded corners */
+    border-radius: 20px; /* Makes the button rounded for a "smooth" look */
+    transition: all 0.2s ease-in-out; /* Transition effect for smooth hover effect */
   }
   
-  .actions button:hover,
+  .actions button:hover {
+    background: #800000; /* Darker red background when hovering */
+    color: white; /* Keeps text color white when hovering */
+    transform: scale(1.05); /* Slightly enlarges button when hovering */
+  }
+  
   .actions button:active {
-    background: #0c5460; /* Changes background when hovering or active */
-    color: #ccc; /* Changes text color when hovering or active */
+    background: #6B0000; /* Even darker red background when active */
+    color: white; /* Keeps text color white when active */
   }
   

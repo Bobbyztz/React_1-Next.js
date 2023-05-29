@@ -21,8 +21,8 @@ function NewMeetupForm(){
                 <label htmlFor='description'>Description</label>
                 <textarea id='description' required rows='5' />
             </div>
-            <div className={classes.action}>
-                <button>Add Meetup</button>
+            <div className={classes.actions}>
+                <button c>Add Meetup</button>
             </div>
         </form>
     </Card>
