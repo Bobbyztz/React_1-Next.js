@@ -1,0 +1,59 @@
+/* Style for the form */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Space between each form control */
+  }
+  
+  /* Style for each form control */
+  .control {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width of its parent container */
+  }
+  
+  .control label {
+    font-weight: bold; /* Make labels bold */
+    margin-bottom: 0.5rem; /* Space between label and input field */
+    color: #282c34; /* Color that matches the theme */
+  }
+  
+  .control input,
+  .control textarea {
+    font: inherit; /* Inherits font properties from parent */
+    border-radius: 4px; /* Round corners */
+    background: #f0f0f0; /* Light grey background */
+    border: 1px solid #ccc; /* Border around input fields */
+    padding: 0.25rem; /* Some padding inside input fields */
+  }
+  
+  .control input:focus,
+  .control textarea:focus {
+    outline: none; /* Removes default browser outline */
+    background: #e8e8e8; /* Changes background to a slightly darker grey */
+    border-color: #7b7b7b; /* Changes border color when focused */
+  }
+  
+  /* Style for the action button */
+  .actions {
+    display: flex;
+    justify-content: flex-end; /* Align button to the right */
+    margin-top: 1rem; /* Space at the top */
+  }
+  
+  .actions button {
+    font: inherit; /* Inherits font properties from parent */
+    padding: 0.5rem 1.5rem; /* Padding inside button */
+    border: none; /* No border */
+    background: #282c34; /* Dark blue background */
+    color: white; /* White text */
+    cursor: pointer; /* Cursor changes when hovering over button */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background: #0c5460; /* Changes background when hovering or active */
+    color: #ccc; /* Changes text color when hovering or active */
+  }
+  
