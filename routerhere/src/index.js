@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
+import { FavoritesContextProvider } from "./store/favorites-context";
 
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(
@@ -15,9 +16,12 @@ import { BrowserRouter } from "react-router-dom";
 // );
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+  <FavoritesContextProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </FavoritesContextProvider>,
+
   document.getElementById("root")
 );
 
