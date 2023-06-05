@@ -1,5 +1,0 @@
-.main{
-    margin: 3rem auto; /* Adds a margin of 3rem (48px) to the top and bottom, and auto to the sides. This centers the element horizontally */
-    width: 90%; /* Sets the width of the element to be 90% of its containing block */
-    max-width: 40rem; /* Sets the maximum width that this element can be, in this case 40rem (640px). This means that even if the width of the containing block increases, this element's width will not exceed 640px */
-}
