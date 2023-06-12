@@ -12,7 +12,13 @@ export default function ClientsPage() {
       <ul>
         {clients.map((client) => (
           <li key={client.id}>
-            <Link href={`/clients/${client.id}`}>{client.name}</Link>
+            <Link href={`/clients/${client.id}`}>{client.name}<br></br></Link>
+            <Link href={
+              {
+                pathname:"/clients/[id]",
+                query:{id:client.id},
+              }
+            }>Alt-{client.name}<br></br></Link>
           </li>
         ))}
       </ul>
